@@ -198,7 +198,7 @@
             ['b', 'Rulo 毎日 ボタン', 'rulo_push_32'],
             ['b', 'Rulo バンパ右', 'rulo_bumper_right'],
             ['b', 'Rulo バンパ左', 'rulo_bumper_left'],
-            [' ', '%s と話す', 'ros_speak', 'hello'],
+            [' ', '%s と話す', 'ros_speak', 'こんにちわ'],
             ['h', '%m.object を検出したとき', 'object_recognition', 'person'],
             ['r', '検出した個数', 'object_num'],
             ['b', '移動中か否か', 'is_moving'],
