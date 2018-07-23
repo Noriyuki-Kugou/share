@@ -199,7 +199,7 @@
             ['b', 'Rulo バンパ右', 'rulo_bumper_right'],
             ['b', 'Rulo バンパ左', 'rulo_bumper_left'],
             [' ', '%s と話す', 'ros_speak', 'こんにちわ'],
-            ['h', '%m.object を検出したとき', 'object_recognition', 'person'],
+            ['h', '%m.object を検出したとき', 'object_recognition', '人'],
             ['r', '検出した個数', 'object_num'],
             ['b', '移動中か否か', 'is_moving'],
         ],
@@ -208,7 +208,7 @@
             rulo_button: ['スタート&ストップ', 'ホーム', '念入り','スポット','予約','毎日'],
             node_name: ['LRF Sensor','RGBD Sensor','TextToSpeech','SLAM','Draknet_ros'],
             move_destination: ['origin', 'point1', 'point2', 'point3', 'point4'],
-            object: ['person'],
+            object: ['人'],
         },
     };
 
