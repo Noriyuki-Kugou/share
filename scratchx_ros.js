@@ -22,7 +22,7 @@
     /*-----Socket config & ROS topic setting-------*/
     /*---------------------------------------------*/
 
-    var socket = new WebSocket('ws://192.168.11.60:9090');
+    var socket = new WebSocket('ws://rulo.local:9090');
 
     var adv_scratch_ros = {
         "op": "advertise",
@@ -139,20 +139,8 @@
     ext.rulo_bumper_right = function(){ return rulo_bumper_right_state; };
     ext.rulo_bumper_left = function(){ return rulo_bumper_left_state; };
 
-
-    //ROSノード起動
-    ext.ros_node_launch = function(str) { ext.pub_scratch_ros("ros_launch:" + str); };
-
-    //ROSノード削除
-    ext.ros_node_kill = function(str) { ext.pub_scratch_ros("ros_kill:" + str); };
-
     //音声合成
     ext.ros_speak = function(str) { ext.pub_scratch_ros("ros_speech:" + str); };
-
-    ext.ros_move = function(str){//自立移動
-        moving_state = true;
-        ext.pub_scratch_ros("ros_move:" + str);
-    };//move
 
     //検出された物体の個数
     ext.object_num = function(){ return receive_object_num; };
