@@ -157,14 +157,12 @@
         else if (str == '毎日' && rulo_button32_state == true){ return true; }
     };//rulo_button_hat
 
-    ext.object_recognition = function(str){
-        console.log('object_recognition:' + str);
-        if (str == receive_object) {
-            console.log('object_recognition' + str);
-            receive_object = "";
+    ext.object_recognition = function(str){//一旦チェックしない
+        if(receive_object_num > 0){
             return true;
+        }else{
+            return false;
         }
-        return false;
     };//object_recognition
 
     // ブロックのフォーマット指定
